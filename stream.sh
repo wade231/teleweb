@@ -5,7 +5,7 @@ set -e
 while true
 do
 ffmpeg \
-    -re -f lavfi -i "movie=filename=318.mp4:loop=0, setpts=N/(FRAME_RATE*TB)" \
+    -re -f image2 -loop 1 -i 318.png
     -thread_queue_size 512 -i "https://radio.lotustechnologieslk.net:2020/stream/hirufmgarden" \
     -map 0:v:0 -map 1:a:0 \
     -map_metadata:g 1:g \
