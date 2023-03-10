@@ -5,7 +5,7 @@ set -e
 while true
 do
   ffmpeg -loglevel info -y -re \
-    -f image2 -loop 1 -i bg.png \
+    -f image2 -loop 1 -i 318.png \
     -thread_queue_size 512 -i "https://radio.lotustechnologieslk.net:2020/stream/hirufmgarden" \
     -c:v libx264 -preset veryfast -b:v 3000k -maxrate 3000k -bufsize 6000k \
     -framerate 25 -video_size 1280x720 -vf "format=yuv420p" -g 50 -shortest -strict experimental \
