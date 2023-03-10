@@ -4,5 +4,5 @@ set -e
 
 while true
 do
-ffmpeg -re -i 'https://lin-gd-001-cf.slivcdn.com/out/v1/f88af37f57d94cbd8c584cd5e83d92aa/master_2.m3u8?hdntl=exp=1678310515~acl=*~hmac=6f91af5c893afd7f1002d0743fab169753f636ba6d2f6649fc0f81b6f3a463df&originpath=/linear/hls/pb/event/x7rXWd2ERZ2tvyQWPmO1HA/stream/c69e68f4-2089-473d-b5f3-9c22ea9f5a9e:SIN2/variant/cfa0c96ffd0921cb792c23e4d6205d69/bandwidth/1828921.m3u8' -c:v libx264 -preset veryfast -maxrate 3000k -bufsize 6000k -pix_fmt yuv420p -g 50 -c:a aac -b:a 160k -ac 2 -ar 44100 -f flv rtmps://dc5-1.rtmp.t.me/s/1232369957:_ZNvpDHr6Fi2TTx5ZVf-lA
+ffmpeg -re -i 'https://es5.quest123.top:8088/live/webcricn04/playlist.m3u8?id=114607&pk=97c500581dcf174d9c131ce5501f933acfbe01b16d11f374cadf78c674c2bdefe6c905763df43591cfb2f85e9d305b7bba5ebd8862d18949104b916860984605' -c:v libx264 -preset veryfast -maxrate 3000k -bufsize 6000k -pix_fmt yuv420p -g 50 -c:a aac -b:a 160k -ac 2 -ar 44100 -f flv rtmps://dc5-1.rtmp.t.me/s/1232369957:_ZNvpDHr6Fi2TTx5ZVf-lA
 done
