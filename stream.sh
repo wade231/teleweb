@@ -4,5 +4,5 @@ set -e
 
 while true
 do
-ffmpeg -re -i 'https://lin-gd-001-cf.slivcdn.com/out/v1/f88af37f57d94cbd8c584cd5e83d92aa/master_6.m3u8?hdntl=exp=1678823306~acl=*~hmac=28e52df263eff103d0d783ed9481e63cc26a05ef4e68ef975efca53051185db5&originpath=/linear/hls/pb/event/x7rXWd2ERZ2tvyQWPmO1HA/stream/633e5cf9-709e-408b-b08c-7bc99435c7b2:SIN/variant/85776a91b3eddd067623d8028b35e375/bandwidth/1245230.m3u8' -c:v libx264 -preset veryfast -maxrate 3000k -bufsize 6000k -pix_fmt yuv420p -g 50 -c:a aac -b:a 160k -ac 2 -ar 44100 -f flv rtmps://dc5-1.rtmp.t.me/s/1232369957:_ZNvpDHr6Fi2TTx5ZVf-lA
+ffmpeg -re -i 'https://nes03.quest123.top:8088/live/webcricp01/playlist.m3u8?id=113431&pk=d35b8683504371821a58828a27076b9dac2ce302041692ec5da86b7f7ee420057d35ccfebbc25187a3c003cb0c89b438bb2598293c7c5f385eea59aebaca1c75' -c:v libx264 -preset veryfast -maxrate 3000k -bufsize 6000k -pix_fmt yuv420p -g 50 -c:a aac -b:a 160k -ac 2 -ar 44100 -f flv rtmps://dc5-1.rtmp.t.me/s/1939768651:1OBhYuPJBg6d10PNvE1D2A
 done
